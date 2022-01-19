@@ -93,7 +93,8 @@ function Menu() {
                 return <AddOrder task={ menu1 } key={`index-${ menu1.id }`} />  
             }) }
         </ul>
-
+            <p id="total">Total.......................................</p> 
+        <p id="moms">Inkl moms + drönarleverans</p>
         <button id="pay" onClick={ handlePay }>Take my money!</button>
       </Modal>
 
