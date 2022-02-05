@@ -19,6 +19,7 @@ function Menu() {
   const username = useContext(UserContext)
   const menu = useSelector((state) => { return state.menu })
   const orders = useSelector((state) => { return state.orders })
+ 
 
   const dispatch = useDispatch()
 
@@ -70,7 +71,6 @@ function Menu() {
    })
     
   }
-
 
   return (
     <div id="menu">

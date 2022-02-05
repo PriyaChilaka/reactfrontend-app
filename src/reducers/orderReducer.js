@@ -13,6 +13,14 @@ export const orderReducer = (state = initState, action) => {
                 menu:action.payload
             
                 }
+        }
+            
+              case 'POST_ORDER':
+            return {
+                ...state,
+                
+                orderStatus: action.payload,
+                
             }
         case 'ADD_ORDER':{
             return {
@@ -26,13 +34,7 @@ export const orderReducer = (state = initState, action) => {
                 ]
             }
         }
-             case 'POST_ORDER':
-            return {
-                ...state,
-                
-                orderStatus: action.payload,
-                
-            }
+           
 
 default:
 return state
